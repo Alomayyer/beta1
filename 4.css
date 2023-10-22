@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    background-color: white;
+}
+
+.Nav{
+    /* side ways of the page, so if its 100% then goes from left wright all the way */
+    width: 100%;
+    /* it goes from top to bottom the ihgher the number the lower it goes */
+    height: 80px;
+    background-color: navy;
+    /*  */
+
+}
+
+ul{
+    /* it removes the dots from the list */
+    list-style: none;
+    /* padding= حشو ، meaing anthing  next the list will be removed*/
+    padding: 0;
+    /* any marigns will be covered lower the margin lower the margin */
+    margin: 0;
+    /* meaing what */
+    position: absolute;
+
+}
+ul li{
+    /* make the text spread out to the left, so if it is unorderd list from top down, spread out left */
+    float: left;
+    /* it gives margin to the text to go down */
+    margin-top: 20px;
+}
+
+ul li a{
+    width: 150px;
+    color: white;
+    /* make the text block */
+    display: block;
+    /* removes any lines below the text or other deceration */
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    /* i dont know */
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a:hover{
+    background-color: brown;
+}
+
+ul li ul{
+     background-color: navy;
+}
+
+ul li ul li{
+    float: none;
+
+
+}
+
+ul li ul{
+    display: none;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+.im{
+    text-align: center;
+}
+.bio{
+   text-align: center; 
+   color: navy;
+}
+
+.intro{
+    text-align: center;
+    color: navy;
+}
+
+/* media is to make responsive website to intreact with diffreant screens: iphone or destop. it is recomanded to start with mobile and than desktop */
+/* media types: screen, tablte, mobile, and any other devices. print to change the colre and style if you want print a page */
+
+@media (max-width:952px){
+    nav ul li a{
+        font-size: 16px;
+      
+    }
+
+}
+
+@media (max-width:952px) {
+    .ul{
+
+    
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: 0;
+        text-align: center;
+
+    }
+
+    nav ul li {
+        display: block;
+    }
+    
+}
